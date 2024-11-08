@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationActivity"
+
+    >
+    <!-- FloatingActionsMenu 设置在顶部居中 -->
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        app:layout_constraintHeight_default="percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:translationZ="8dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintVertical_bias="0.14"
+        app:fab_expandDirection="down"
+        >
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabaction3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FFF"
+            app:fab_size="mini"
+            app:fab_title="Action 1"
+            app:fab_icon="@drawable/baseline_navigation_24_red"
+            app:layout_constraintBottom_toTopOf="@id/floating_menu"
+            android:layout_marginBottom="8dp" />
+
+<!--        &lt;!&ndash; fabaction2 设置在 fabaction1 的下方 &ndash;&gt;-->
+<!--        <com.getbase.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fabaction2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:fab_colorNormal="#FFF"-->
+<!--            app:fab_size="mini"-->
+<!--            app:fab_icon="@drawable/baseline_rate_review_24"-->
+<!--            app:fab_title="Action 2"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/fabaction1"-->
+<!--            android:layout_marginTop="8dp" />-->
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+
+
+<!--几个主组件-->
+
+
+
+    <ImageView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/red_bg1"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.03"
+        android:importantForAccessibility="no"
+        tools:ignore="MissingConstraints" />
+    <!-- Top Row -->
+
+    <LinearLayout
+        android:id="@+id/hint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/red_bg"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.03">
+        <TextView
+
+            android:id="@+id/textview5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="准备出发，开始导航"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+
+            android:paddingStart="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_row1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.07"
+
+        app:layout_constraintTop_toBottomOf="@id/hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+
+            android:src="@drawable/baseline_navigation_24"
+            android:background="@drawable/grey_background" />
+
+        <Spinner
+            android:layout_marginTop="5dp"
+            android:id="@+id/search_box_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp" />
+
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="前往"
+            android:textColor="#FF5A66"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Chip Group -->
+    <com.google.android.material.chip.ChipGroup
+
+        android:background="@mipmap/navigation3"
+        android:id="@+id/chip_group"
+        android:layout_width="0dp"
+
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.05"
+
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/top_row1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginLeft="5dp">
+
+        <com.google.android.material.chip.Chip
+
+            android:id="@+id/chip_shop"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商家Logo"
+            android:textColor="#305f72"
+            android:letterSpacing="0.03"
+            app:chipStrokeWidth="1dp"
+            android:checkable="true"
+
+            android:layout_marginLeft="5dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_people"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附近的人"
+            app:chipStrokeWidth="1dp"
+            android:checkable="true"
+            android:textColor="#305f72"
+            android:letterSpacing="0.03"
+
+            android:layout_marginLeft="10dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_describe"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商店描述"
+            app:chipStrokeWidth="1dp"
+            android:checkable="true"
+            android:textColor="#305f72"
+            android:letterSpacing="0.03"
+
+            android:layout_marginLeft="10dp"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+<!--    android:layout_height="wrap_content"-->
+    <!-- FrameLayout -->
+    <FrameLayout
+        android:background="@mipmap/navigation3"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.68"
+
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/chip_group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp">
+
+        <!-- ImageView 显示背景图像 540dp-->
+        <ImageView
+
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/navigation2"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/navigationimage1"
+            android:layout_width="247dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+
+            android:background="@mipmap/navigationbg1"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:layout_marginLeft="327dp"
+            android:layout_width="140dp"
+            android:layout_height="540dp"
+            android:background="@mipmap/navigation3"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/coordinatesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textSize="18sp" />
+
+
+        <com.example.wifi_locate.MyLocation
+            android:id="@+id/myLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            />
+
+
+
+
+
+
+
+    </FrameLayout>
+
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/frame_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:itemIconTint="#ff5a86"
+        app:itemTextColor="#ff5a86"
+        app:menu="@menu/navigation"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

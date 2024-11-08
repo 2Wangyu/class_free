@@ -1,0 +1,284 @@
+create database test;
+use database test;
+create table testtable(
+ aaa int,
+ bbb char
+);yw use database yyy; 2024-04-30 19:39:42
+1||show database;||2024-05-12 19:47:08
+1||show databases;||2024-05-12 19:47:16
+1||use database student;||2024-05-12 19:47:32
+yw||use database student||2024-05-12 19:49:01
+yw||use database yyy
+||2024-05-12 19:51:06
+yw||show table||2024-05-12 19:51:18
+yw||insert student values(2)||2024-05-12 19:53:47
+yw||insert into student values(2)||2024-05-12 19:54:26
+yw||insert into students values(2)||2024-05-12 19:54:47
+yw||insert into student(id) values(2)||2024-05-12 19:55:43
+yw||use database yw||2024-05-12 19:56:02
+yw||use database yyy||2024-05-12 19:56:34
+yw||insert into students (id) values (5)||2024-05-12 19:57:03
+yw||INSERT INTO students (id) VALUES (1)||2024-05-12 19:57:52
+yw||use database yyy;||2024-05-12 19:58:45
+yw||INSERT INTO students (id) VALUES (1)||2024-05-12 19:58:51
+yw||use database yyy;||2024-05-12 20:02:53
+yw||INSERT INTO students (id) VALUES (1)||2024-05-12 20:02:59
+yw||use database yyy;||2024-05-12 20:07:32
+yw||USE database yyy||2024-05-12 20:07:47
+yw||use database yyy||2024-05-12 20:08:42
+yw||use database yyy||2024-05-12 20:14:54
+yw||insert into students (id) values (10)||2024-05-12 20:15:11
+yw||insert into students (id) values (10)||2024-05-12 20:17:11
+yw||use database yyy||2024-05-12 20:32:30
+yw||delete from yw where aaa=6||2024-05-12 20:32:56
+yw||delete from yw where aaa=6||2024-05-12 20:33:09
+yw||use database yyy||2024-05-12 20:35:26
+yw||delete from yw where aaa=3||2024-05-12 20:35:33
+yw||use database yyy||2024-05-12 21:25:10
+yw||delete from yw where aaa=1000||2024-05-12 21:25:22
+yw||use database yyy||2024-05-12 21:27:48
+yw||delete from yw where aaa=1000||2024-05-12 21:28:16
+yw||use database yyy||2024-05-12 21:28:56
+yw||delete from yw where aaa=1000||2024-05-12 21:29:12
+yw||use database yyy||2024-05-12 21:32:14
+yw||delete from yw where aaa=1000||2024-05-12 21:32:28
+yw||use database yyy||2024-05-12 21:34:20
+yw||delete from yw where aaa=1000||2024-05-12 21:34:36
+yw||use database yyy||2024-05-12 21:35:15
+yw||delete from yw where aaa=1000||2024-05-12 21:35:32
+yw||insert into yw (aaa,bbb) values(1000,'100')||2024-05-12 21:38:22
+yw||insert into yw (aaa,bbb) values(2000,'200')||2024-05-12 21:38:32
+yw||use database yyy||2024-05-12 21:39:14
+yw||delete from yw where aaa=1000||2024-05-12 21:39:24
+yw||use database yyy||2024-05-12 21:40:57
+yw||insert into yw (aaa,bbb) values(1000,'100')||2024-05-12 21:41:14
+yw||insert into yw (aaa,bbb) values(2000,'200')||2024-05-12 21:41:23
+yw||insert into yw (aaa,bbb) values(1000,'300')||2024-05-12 21:41:28
+yw||delete from yw where aaa=1000||2024-05-12 21:42:02
+yw||insert into yw (aaa,bbb) values(1000,'100')||2024-05-12 21:43:27
+yw||insert into yw (aaa,bbb) values(200,'100')||2024-05-12 21:43:32
+yw||insert into yw (aaa,bbb) values(1000,'100')||2024-05-12 21:43:37
+yw||use database yw||2024-05-12 21:44:10
+yw||use database yyy||2024-05-12 21:44:17
+yw||delete from yyy where aaa=1000||2024-05-12 21:44:42
+yw||delete from yyy where aaa=1000||2024-05-12 21:45:12
+yw||delete from yw where aaa=1000||2024-05-12 21:45:41
+yw||insert into yw (aaa,bbb) values(1000,'100')||2024-05-12 21:49:25
+yw||insert into yw (aaa,bbb) values(2000,'100')||2024-05-12 21:49:34
+yw||insert into yw (aaa,bbb) values(1000,'200')||2024-05-12 21:49:38
+yw||use database yyy||2024-05-12 21:51:18
+yw||delete from yw where aaa=1000||2024-05-12 21:51:34
+yw||use database yyy||2024-05-12 21:53:24
+yw||insert into yw (aaa,bbb) values(1000,'100')||2024-05-12 21:53:32
+yw||insert into yw (aaa,bbb) values(2000,'100')||2024-05-12 21:53:37
+yw||insert into yw (aaa,bbb) values(1000,'200')||2024-05-12 21:53:41
+yw||delete from yw where aaa=1000||2024-05-12 21:54:38
+yw||insert into yw (aaa,bbb) values(1000,'100')||2024-05-12 21:55:17
+yw||insert into yw (aaa,bbb) values(2000,'100')||2024-05-12 21:55:21
+yw||insert into yw (aaa,bbb) values(1000,'89')||2024-05-12 21:55:27
+yw||use database yyy||2024-05-12 21:57:22
+yw||delete from yw where aaa=1000||2024-05-12 21:57:27
+yw||use database yyy||2024-05-12 22:03:45
+yw||delete from yw where aaa=1000||2024-05-12 22:04:11
+yw||insert into yw (aaa,bbb) values(1000,'100')||2024-05-12 22:05:20
+yw||insert into yw (aaa,bbb) values(2000,'500')||2024-05-12 22:06:29
+yw||delete from yw where aaa=2000||2024-05-12 22:06:47
+yw||insert into yw (aaa,bbb) values(2000,'200')||2024-05-12 22:08:28
+yw||insert into yw (aaa,bbb) values(50,'200')||2024-05-12 22:08:47
+yw||delete from yw where bbb='200'||2024-05-12 22:09:16
+yw||use database yyy||2024-05-12 22:58:37
+yw||update yw set aaa=2000 where bbb='100'||2024-05-12 22:59:33
+yw||use database||2024-05-12 23:09:54
+yw||use database yyy||2024-05-12 23:10:01
+yw||delete from yw where aaa=1000||2024-05-12 23:10:26
+yw||update yw set aaa=1000 where bbb='20'||2024-05-12 23:13:34
+yw||grant all on yyy to yw||2024-05-13 15:43:36
+yw||use database yyy||2024-05-13 15:43:48
+yw||revoke all on yyy from yw||2024-05-13 15:46:21
+yw||grant all on yyy to yw||2024-05-13 15:48:34
+yw||revoke select on yyy from yw||2024-05-13 15:48:46
+yw||revoke select on yyy from yw||2024-05-13 15:51:41
+yw||revoke select on yyy from yw||2024-05-13 15:58:34
+yw||revoke select on yyy from yw||2024-05-13 16:44:48
+yw||revoke select on yyy from yw||2024-05-13 16:47:29
+yw||revoke select on yyy from yw||2024-05-13 17:09:31
+yw||revoke select on yyy from yw||2024-05-13 17:10:26
+yw||revoke all on yyy from yw||2024-05-13 17:20:15
+yw||revoke all on yyy from yw||2024-05-13 17:21:15
+yw||grant all on yyy to yw||2024-05-13 17:21:41
+yw||revoke select on yyy from yw||2024-05-13 17:22:03
+yw||revoke select on yyy from yw||2024-05-13 17:24:45
+yw||revoke all on yyy from yw||2024-05-13 17:27:14
+yw||revoke all on yyy from yw||2024-05-13 17:29:06
+yw||revoke all on yyy from yw||2024-05-13 17:30:27
+yw||revoke all on yyy from yw||2024-05-13 17:31:25
+yw||revoke all on yyy from yw||2024-05-13 17:35:55
+yw||grant all on yyy to yw||2024-05-13 17:36:15
+yw||revoke select on yyy from yw||2024-05-13 17:36:31
+yw||revoke select on yyy from yw||2024-05-13 17:38:40
+yw||revoke select on yyy from yw||2024-05-13 17:40:22
+yw||use database yyy;||2024-05-13 22:36:57
+yw||grant all on yyy to yw;||2024-05-13 22:39:41
+yw||create table test(
+       number1 int,
+       number2 int
+
+);||2024-05-13 22:40:58
+yw||insert into test (number1,number2) values (30,30)  ||2024-05-13 22:42:19
+yw||use database yyy;||2024-05-14 00:56:02
+yw||select * from yw;||2024-05-14 00:57:15
+yw||select * from test;||2024-05-14 00:58:40
+yw||use database yyy;||2024-05-14 01:00:17
+yw||select * from yw;||2024-05-14 01:00:35
+yw||use database yyy;||2024-05-14 01:04:06
+yw||select * from yw;||2024-05-14 01:04:14
+1||CREATE DATABASE hhq||2024-05-14 11:50:16
+1||CREATE TABLE s
+(
+	sno varchar,
+	sname varchar,
+	age int
+);||2024-05-14 11:50:58
+1||USE DATABASE hhq||2024-05-14 11:51:09
+1||GRANT ALL ON hhq to 1||2024-05-14 11:54:00
+1||CREATE TABLE s
+(
+	sno varchar, 
+	sname varchar, 
+	age int
+)||2024-05-14 11:54:54
+1||CREATE TABLE sc
+(
+	sno varchar,
+	grade int, 
+	cno varchar
+);||2024-05-14 11:55:25
+1||CREATE TABLE c
+(
+	cno varchar,
+	cid int
+);||2024-05-14 11:55:57
+1||INSERT INTO s(sno, sname, age) VALUES(22301064, hhq, 19);||2024-05-14 11:57:05
+1||INSERT INTO s(sno, sname, age) VALUES(22301064, hhq, 19);||2024-05-14 12:00:57
+1||grant all on hhq to 1||2024-05-14 12:01:31
+1||INSERT INTO s(sno, sname, age) VALUES(22301064, hhq, 19);||2024-05-14 12:01:35
+1||INSERT INTO s(sno, sname, age) VALUES(22309064, gsy, 20);||2024-05-14 12:01:58
+1||INSERT INTO sc(sno, grade, cno) VALUES(22301064, 97, 801);||2024-05-14 12:02:38
+1||INSERT INTO sc(sno, grade, cno) VALUES(22309064, 99, 802);||2024-05-14 12:03:05
+1||INSERT INTO c(cno, cid) VALUES(801, 1);||2024-05-14 12:03:47
+1||INSERT INTO c(cno, cid) VALUES(802, 2);||2024-05-14 12:03:56
+1||USE DATABASE hhq||2024-05-14 12:05:33
+1||SELECT *
+FROM s||2024-05-14 12:05:43
+1||SELECT sno, age
+FROM s||2024-05-14 12:05:58
+1||SELECT sno, age
+FROM s
+WHERE age >19||2024-05-14 12:06:21
+1||SELECT *
+FROM s
+WHERE age <= 27||2024-05-14 12:06:53
+1||USE DATABASE hhq||2024-05-14 12:14:33
+1||SELECT *
+FROM s, sc, c||2024-05-14 12:14:43
+1||SELECT *
+from s, sc||2024-05-14 12:15:09
+1||USE DATABASE hhq||2024-05-14 12:19:53
+1||SELECT *
+FROM s, sc
+WHERE s.sno = 22309064||2024-05-14 12:19:55
+1||SELECT *
+FROM s, sc
+WHERE s.age <=19||2024-05-14 12:20:09
+1||SELECT *
+FROM s, sc, c
+WHERE sc.grade = 97||2024-05-14 12:20:30
+1||SELECT s.age, sc.sno, c.cno
+FROM s, sc, c
+WHERE s.age >19||2024-05-14 12:24:45
+1||USE DATABASE hhq||2024-05-14 12:24:56
+1||SELECT s.age, sc.sno, c.cno
+FROM s, sc, c
+WHERE s.age >19||2024-05-14 12:25:00
+1||SELECT s.age, sc.sno, c.cno
+FROM s, sc, c
+WHERE s.sno = 22309064||2024-05-14 12:25:28
+1||USE DATABASE hhq||2024-05-14 12:27:32
+1||SELECT *
+FROM s;||2024-05-14 12:27:45
+1||SELECT *
+FROM s;||2024-05-14 12:28:37
+1||USE DATABASE hhq||2024-05-14 12:28:46
+1||SELECT *
+FROM s;||2024-05-14 12:28:49
+1||SELECT *
+FROM s
+WHERE age > 19;||2024-05-14 12:29:06
+1||SELECT s.sno, sc.grade, c.cno
+FROM s, sc, c;||2024-05-14 12:29:27
+yw||||2024-05-14 13:18:19
+yw||create database test;||2024-05-14 13:19:19
+yw||use database test;||2024-05-14 13:19:21
+yw||grant all on test to yw;||2024-05-14 13:19:22
+yw||create table c(cno varchar,cid int);||2024-05-14 13:19:23
+yw||create table s(sno varchar,sname varchar,age int);||2024-05-14 13:19:23
+yw||create table sc(sno varchar,grade int,cno varchar);||2024-05-14 13:19:23
+yw||insert into c(cno,cid) values(801,1);||2024-05-14 13:19:24
+yw||insert into c(cno,cid) values(802,2);||2024-05-14 13:19:24
+yw||insert into s(sno,sname,age) values(22301064,hhq,19);||2024-05-14 13:19:25
+yw||insert into s(sno,sname,age) values(22309064,gsy,20);||2024-05-14 13:19:25
+yw||insert into sc(sno,grade,cno) values(22301064,97,801);||2024-05-14 13:19:25
+yw||insert into sc(sno,grade,cno) values(22309064,99,802);||2024-05-14 13:19:25
+yw||select * from s.sno,sc.grade,c.cno from s,sc,c;||2024-05-14 13:19:25
+yw||||2024-05-14 13:22:07
+yw||create database test;||2024-05-14 13:22:17
+yw||use database test;||2024-05-14 13:22:21
+yw||grant all on test to yw;||2024-05-14 13:22:31
+yw||create table c(cno varchar,cid int);||2024-05-14 13:22:32
+yw||create table s(sno varchar,sname varchar,age int);||2024-05-14 13:22:33
+yw||create table sc(sno varchar,grade int,cno varchar);||2024-05-14 13:22:34
+yw||insert into c(cno,cid) values(801,1);||2024-05-14 13:22:34
+yw||insert into c(cno,cid) values(802,2);||2024-05-14 13:22:34
+yw||insert into s(sno,sname,age) values(22301064,hhq,19);||2024-05-14 13:22:34
+yw||insert into s(sno,sname,age) values(22309064,gsy,20);||2024-05-14 13:22:34
+yw||insert into sc(sno,grade,cno) values(22301064,97,801);||2024-05-14 13:22:35
+yw||insert into sc(sno,grade,cno) values(22309064,99,802);||2024-05-14 13:22:35
+yw||select * from s.sno,sc.grade,c.cno from s,sc,c;||2024-05-14 13:22:35
+yw||create database test;||2024-05-14 13:24:22
+yw||grant all on test to yw;||2024-05-14 13:24:25
+yw||use database test;||2024-05-14 13:24:27
+yw||create table c(cno varchar,cid int);||2024-05-14 13:24:29
+yw||create table s(sno varchar,sname varchar,age int);||2024-05-14 13:24:30
+yw||create table sc(sno varchar,grade int,cno varchar);||2024-05-14 13:24:30
+yw||insert into c(cno,cid) values(801,1);||2024-05-14 13:24:31
+yw||insert into c(cno,cid) values(802,2);||2024-05-14 13:24:32
+yw||insert into s(sno,sname,age) values(22301064,hhq,19);||2024-05-14 13:24:33
+yw||insert into s(sno,sname,age) values(22309064,gsy,20);||2024-05-14 13:24:33
+yw||insert into sc(sno,grade,cno) values(22301064,97,801);||2024-05-14 13:24:34
+yw||insert into sc(sno,grade,cno) values(22309064,99,802);||2024-05-14 13:24:34
+yw||select * from s;||2024-05-14 13:24:35
+yw||select s.sno,sc.grade,c.cno from s,sc,c;||2024-05-14 13:24:36
+yw||create database test;||2024-05-16 22:04:15
+yw||grant all on test to yw;||2024-05-16 22:04:19
+yw||use database test;||2024-05-16 22:04:19
+yw||create table c(cno varchar,cid int);||2024-05-16 22:04:20
+yw||create table s(sno varchar,sname varchar,age int);||2024-05-16 22:04:21
+yw||create table sc(sno varchar,grade int,cno varchar);||2024-05-16 22:04:21
+yw||insert into c(cno,cid) values(801,1);||2024-05-16 22:04:22
+yw||insert into c(cno,cid) values(802,2);||2024-05-16 22:05:28
+yw||insert into s(sno,sname,age) values(22301064,hhq,19);||2024-05-16 22:05:28
+yw||insert into s(sno,sname,age) values(22309064,gsy,20);||2024-05-16 22:05:28
+yw||insert into sc(sno,grade,cno) values(22301064,97,801);||2024-05-16 22:05:29
+yw||insert into sc(sno,grade,cno) values(22309064,99,802);||2024-05-16 22:05:29
+yw||select * from s;||2024-05-16 22:05:29
+yw||select s.sno,sc.grade,c.cno from s,sc,c;||2024-05-16 22:05:30
+1||create database test;||2024-05-16 22:15:18
+1||grant all on test to 1;||2024-05-16 22:15:21
+1||use database test;||2024-05-16 22:15:21
+1||create table c(cno varchar,cid int);||2024-05-16 22:15:22
+1||create table s(sno varchar,sname varchar,age int);||2024-05-16 22:15:22
+1||create table sc(sno varchar,grade int,cno varchar);||2024-05-16 22:15:22
+1||insert into c(cno,cid) values(801,1);||2024-05-16 22:15:23
+1||insert into c(cno,cid) values(802,2);||2024-05-16 22:17:32
+1||insert into s(sno,sname,age) values(22301064,hhq,19);||2024-05-16 22:17:33
+1||insert into s(sno,sname,age) values(22309064,gsy,20);||2024-05-16 22:17:33

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springboot.mapper.UserMapper">
+    <!--id为使用的方法名字 ，resultType 对象-->
+    <select id="listUsers" resultType="com.example.springboot.entity.User">
+        select * from user
+    </select>
+</mapper>

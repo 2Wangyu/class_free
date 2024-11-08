@@ -1,0 +1,13 @@
+集合的体系结构：
+单列集合（添加一个集合）和双列集合（添加一对数据）
+
+
+//Collection(包含以下)
+//List                              Set
+//ArrayList LinkedList Vector     HashSet           TreeSet
+                                   LinkedHashSet
+								   
+List:添加的元素有序（存和取的顺序一致），可重复，有索引（根据索引获得每一个元素）
+Set：无序，不重复，无索引的
+单列集合的祖宗接口，她的功能所有的单列集合都可以继承使用的
+//

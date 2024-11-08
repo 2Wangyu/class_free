@@ -1,0 +1,15 @@
+release/altertable.o
+release/createdatabase.o
+release/createtable.o
+release/dropdatabase.o
+release/droprecord.o
+release/droptable.o
+release/main.o
+release/mainwindow.o
+release/modifyrecord.o
+release/signupwidget.o
+release/userinterface.o
+release/qrc_image.o
+release/moc_mainwindow.o
+release/moc_signupwidget.o
+release/moc_userinterface.o

@@ -1,0 +1,25 @@
+shift f6  批量修改
+fori:从0开始循环   forr从尾部开始
+Ctrl+t   使用一些常见的方法
+alt+insert  constructor+Tab(取消默认）
+shift+下键（往下选）
+
+ctrl+p:可以显示参数以来对照着写
+
+crti+b跟进，看方法的原码
+
+//导包
+选中报错的类  alt+enter
+
+Alt+insert 一些构造方法，get set
+
+ctrl+/  注释快捷键
+
+ctrl+alt+m  抽取一段变成方法，在同一个类当中
+ctrl+n  看源代码
+
+alt+insert重写方法
+
+ctrl+d 向下复制一行
+
+split+move+right 两个文件一起看

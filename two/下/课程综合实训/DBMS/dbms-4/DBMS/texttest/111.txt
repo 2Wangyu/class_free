@@ -1,0 +1,26 @@
+create database test;
+grant all on test to 1;
+use database test;
+create table c(
+ cno varchar,
+ cid int
+);
+create table s(
+sno varchar,
+sname varchar,
+age int
+);
+create table sc(
+sno varchar,
+grade int,
+cno varchar
+);
+insert into c(cno,cid) values(801,1);
+insert into c(cno,cid) values(802,2);
+insert into s(sno,sname,age) values(22301064,hhq,19);
+insert into s(sno,sname,age) values(22309064,gsy,20);
+insert into sc(sno,grade,cno) values(22301064,97,801);
+insert into sc(sno,grade,cno) values(22309064,99,802);
+select * from s;
+select s.sno,sc.grade,c.cno from s,sc,c;
+

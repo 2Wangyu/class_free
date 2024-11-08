@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/homepagebg"
+    tools:context=".HomePage4Activity">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:entries="@array/spinner_string"
+        android:popupBackground="@drawable/shape_for_custom_spinner"
+        android:background="@drawable/selector_for_custom_spinner"
+        style="@style/customSpinnerStyle"
+        android:layout_marginRight="10dp"
+
+
+        />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        app:titleTextColor="#333333"
+        app:title=" "
+        app:navigationIcon="@drawable/baseline_arrow_back_24_white"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.04"
+        />
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.1"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:text=" 欢迎回到易购!"
+        />
+
+    <RelativeLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_bg"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText">
+
+        <Spinner
+            android:id="@+id/search_box_spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/searchIcon"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/baseline_search_24" />
+    </RelativeLayout>
+
+    <LinearLayout
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_marginTop="15dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/servicesContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/grey_red_bg"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchContainer"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="0dp"
+            android:padding="0dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索您所感\n           兴趣的商店 !"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_gravity="center|start"
+                android:layout_marginLeft="10dp"
+                android:letterSpacing="0.08" />
+
+            <!-- 嵌套一个水平的 LinearLayout 来放置按钮 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/your_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前往"
+                android:textColor="#FF5A66"
+                android:padding="2dp"
+                android:layout_marginEnd="10dp"
+            android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+    </LinearLayout>
+        <ImageView
+            android:id="@+id/gif3"
+            android:layout_width="102dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+
+
+
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/serviceIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        android:src="@drawable/baseline_circle_notifications_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/servicesContainer"
+        android:layout_marginLeft="13dp"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintHeight_default="percent"
+
+        />
+
+    <TextView
+        android:id="@+id/serviceText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.05"
+        android:gravity="center"
+        android:text="提供给您的服务"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#4a7994"
+        android:letterSpacing="0.03"
+        app:layout_constraintStart_toEndOf="@id/serviceIcon"
+        app:layout_constraintTop_toBottomOf="@id/servicesContainer"
+        android:layout_marginLeft="13dp" />
+    <LinearLayout
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.16"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:id="@+id/navigationContainer1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/yellow_bg"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/serviceText"
+        app:layout_constraintBottom_toTopOf="@id/navigationContainer2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+
+        >
+
+        <!--        android:src="@mipmap/test"-->
+        <ImageView
+            android:id="@+id/gif1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="导航"
+                android:layout_gravity="center"
+                android:textColor="#305f72"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="top"
+                />
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#305f72"
+                android:text="寻找商家\n获取详细路线指引"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/gonavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="前往"
+            android:background="@drawable/red_button"
+            android:textColor="#FF5A66"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/navigationContainer2"
+        android:layout_width="0dp"
+        android:layout_marginTop="7dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/yellow_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navigationContainer1">
+        <ImageView
+            android:id="@+id/gif2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitXY" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="top"
+                android:text="商店"
+                android:layout_gravity="center"
+                android:textColor="#305f72"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浏览各类商店\n发现最新商品"
+                android:textColor="#305f72"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/goshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/red_button"
+            android:text="前往"
+            android:textColor="#FF5A66"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigationContainer3"
+        android:layout_width="0dp"
+        android:layout_marginTop="7dp"
+
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/yellow_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navigationContainer2">
+        <ImageView
+            android:id="@+id/gif4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:src="@mipmap/review"
+           />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="top"
+                android:layout_gravity="center"
+                android:text="评价"
+                android:textColor="#305f72"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户评价概览\n分享你的购物体验"
+                android:textColor="#305f72"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/goreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/red_button"
+            android:text="前往"
+            android:textColor="#FF5A66"
+            android:textSize="18sp"
+
+
+            />
+    </LinearLayout>
+
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.11"
+
+        android:id="@+id/bottomnavigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:itemIconTint="#ff5a86"
+        app:itemTextColor="#ff5a86"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navigationContainer3"
+
+
+        app:menu="@menu/navigation">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

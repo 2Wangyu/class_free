@@ -1,0 +1,15 @@
+debug/altertable.o
+debug/createdatabase.o
+debug/createtable.o
+debug/dropdatabase.o
+debug/droprecord.o
+debug/droptable.o
+debug/main.o
+debug/mainwindow.o
+debug/modifyrecord.o
+debug/signupwidget.o
+debug/userinterface.o
+debug/qrc_image.o
+debug/moc_mainwindow.o
+debug/moc_signupwidget.o
+debug/moc_userinterface.o

@@ -1,0 +1,3 @@
+sno varchar
+sname varchar
+age int

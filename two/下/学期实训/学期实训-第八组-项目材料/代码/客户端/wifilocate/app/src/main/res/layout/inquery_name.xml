@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/queTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择您的头像"
+        android:textSize="25sp"
+        android:textColor="#305f72"
+        android:layout_gravity="center_horizontal" />
+
+    <com.example.wifi_locate.CircleImageView
+
+        android:id="@+id/queIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/log"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingClass" />
+
+    <Button
+        android:id="@+id/btnSubmitquit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        android:textSize="18sp"
+        android:textColor="#305f72"
+        android:layout_gravity="center"
+        android:onClick="onSubmitClick" />
+
+</LinearLayout>

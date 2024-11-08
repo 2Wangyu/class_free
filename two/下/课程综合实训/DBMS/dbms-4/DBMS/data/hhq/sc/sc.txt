@@ -1,0 +1,3 @@
+sno varchar
+grade int
+cno varchar

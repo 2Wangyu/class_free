@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/doudizhuGame/doudizhuGame.iml" filepath="$PROJECT_DIR$/doudizhuGame/doudizhuGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/代码/上课代码/上课代码.iml" filepath="$PROJECT_DIR$/代码/上课代码/上课代码.iml" />
+      <module fileurl="file://$PROJECT_DIR$/资料/扩展练习/扩展练习.iml" filepath="$PROJECT_DIR$/资料/扩展练习/扩展练习.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/斗地主.iml" filepath="$PROJECT_DIR$/.idea/斗地主.iml" />
+      <module fileurl="file://$PROJECT_DIR$/作业/作业相关素材（大家自己练习用的）/斗地主素材/斗地主素材.iml" filepath="$PROJECT_DIR$/作业/作业相关素材（大家自己练习用的）/斗地主素材/斗地主素材.iml" />
+      <module fileurl="file://$PROJECT_DIR$/代码/游戏完整代码/游戏完整代码.iml" filepath="$PROJECT_DIR$/代码/游戏完整代码/游戏完整代码.iml" />
+      <module fileurl="file://$PROJECT_DIR$/资料/游戏的最终完整代码/游戏的最终完整代码.iml" filepath="$PROJECT_DIR$/资料/游戏的最终完整代码/游戏的最终完整代码.iml" />
+      <module fileurl="file://$PROJECT_DIR$/作业/作业相关素材（大家自己练习用的）/点名器素材/点名器素材.iml" filepath="$PROJECT_DIR$/作业/作业相关素材（大家自己练习用的）/点名器素材/点名器素材.iml" />
+    </modules>
+  </component>
+</project>

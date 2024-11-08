@@ -1,0 +1,20 @@
+#include <QApplication>  
+#include <QWidget>  
+#include <QPainter>  
+  
+class MyWidget : public QWidget {  
+    Q_OBJECT  
+public:  
+    MyWidget(QWidget *parent = nullptr);  
+    void drawLineChart(const QVector<double> &xValues, const QVector<double> &yValues);  
+};  
+  
+class LineChartWindow : public QMainWindow {  
+    Q_OBJECT  
+public:  
+    LineChartWindow(const QVector<double> &xValues, const QVector<double> &yValues, QWidget *parent = nullptr);  
+protected:  
+    void paintEvent(QPaintEvent *event);  
+};  
+  
+  

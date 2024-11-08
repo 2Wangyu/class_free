@@ -1,0 +1,8 @@
+﻿  Queue.cpp
+D:\桌面\软件\数据结构\作业\括号\括号\Queue.cpp(28,9): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+  Queue.h
+  ValidEncoding.cpp
+  正在生成代码...
+D:\桌面\软件\数据结构\作业\括号\括号\Queue.cpp(31): warning C4715: “Queue::DeQueue”: 不是所有的控件路径都返回值
+x64\Debug\Queue.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+  括号.vcxproj -> D:\桌面\软件\数据结构\作业\括号\x64\Debug\括号.exe

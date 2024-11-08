@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">wifi-locate</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string-array name="spinner_items">
+            <item>KumoKumo</item>
+            <item>满记甜品</item>
+            <item>鲜牛记</item>
+            <item>喜茶</item>
+            <item>奈雪的茶</item>
+            <item>金山城</item>
+        </string-array>
+
+    <style name="NoBorderChipGroup" parent="Widget.MaterialComponents.ChipGroup">
+        <item name="chipGroupStyle">@style/ChipGroupStyle</item>
+    </style>
+
+    <style name="ChipGroupStyle">
+        <item name="android:background">@null</item>
+        <item name="android:outlineProvider">@null</item>
+        <item name="android:outlineAmbientShadowColor">@null</item>
+        <item name="android:outlineSpotShadowColor">@null</item>
+    </style>
+
+
+        <string-array name="spinner_string">
+            <item>点击修改信息</item>
+            <item>修改头像</item>
+            <item>修改用户名</item>
+            <item>查看个人信息</item>
+        </string-array>
+
+    <style name="customTheme">
+        <item name="dropDownListViewStyle">@style/customSpinnerStyle</item>
+    </style>
+    <style name="customSpinnerStyle" parent="android:Widget.ListView.DropDown">
+        <item name="android:textAlignment">center</item>
+        <item name="divider">@color/black</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+</resources>

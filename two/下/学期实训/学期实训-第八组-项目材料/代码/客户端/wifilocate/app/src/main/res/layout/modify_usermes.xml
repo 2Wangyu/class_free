@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/mesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请填写您要修改的个人信息"
+        android:textSize="18sp"
+        android:textColor="#305f72"
+        android:layout_gravity="center_horizontal" />
+
+
+    <EditText
+        android:id="@+id/modifyComment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请填写."
+        android:letterSpacing="0.03"
+        android:maxLines="3"
+        android:minHeight="48dp"
+        android:textColor="#305f72" />
+    <EditText
+        android:id="@+id/modifyComment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请确认."
+        android:letterSpacing="0.03"
+        android:maxLines="3"
+        android:minHeight="48dp"
+        android:textColor="#305f72" />
+
+    <Button
+        android:id="@+id/btnSubmitmodify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:textSize="18sp"
+        android:textColor="#305f72"
+        android:layout_gravity="center"
+        android:onClick="onSubmitClick" />
+
+</LinearLayout>

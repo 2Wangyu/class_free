@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>\
+    <color name="my_light_primary">#FFEDF1    </color>
+        <color name="colorRatingBarEmpty">#CCCCCC</color>
+        <color name="colorRatingBarFilled">#FF5A66</color>
+
+
+
+
+    <style name="labelstyle">
+        <item name="android:background"
+                 >@drawable/bg_label
+
+        </item>
+        <item name="android:textColor">#FFF</item>
+
+    </style>
+
+    <style name="RatingBarStyle" parent="Widget.AppCompat.RatingBar">
+        <!-- 设置未选中的星星颜色 -->
+        <item name="android:progressBackgroundTint">@color/colorRatingBarEmpty</item>
+        <!-- 设置选中的星星颜色 -->
+        <item name="android:progressTint">@color/colorRatingBarFilled</item>
+    </style>
+
+
+</resources>

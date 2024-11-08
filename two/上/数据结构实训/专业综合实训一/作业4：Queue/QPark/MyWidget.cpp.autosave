@@ -1,0 +1,22 @@
+#include <QApplication>  
+#include <QWidget>  
+#include <QPainter>  
+  
+// 自定义类，继承自QWidget  
+class MyWidget : public QWidget {  
+public:  
+    MyWidget(QWidget *parent = nullptr) : QWidget(parent) {}  
+  
+protected:  
+    void paintEvent(QPaintEvent *event) override {  
+        QWidget::paintEvent(event); // 调用父类的paintEvent方法绘制原有界面  
+  
+        QPainter painter(this);  
+        painter.setRenderHint(QPainter::Antialiasing, true);  
+        QPen pen;  
+        pen.setWidth(3);  
+        painter.setPen(pen);  
+        painter.drawLine(QPoint(50, 50), QPoint(200, 200)); // 绘制横线  
+    }  
+};  
+  

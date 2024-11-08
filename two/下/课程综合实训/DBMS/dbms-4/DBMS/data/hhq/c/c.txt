@@ -1,0 +1,2 @@
+cno varchar
+cid int

@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/back">
+        <file>image/History.jpg</file>
+        <file>image/Lake.jpg</file>
+        <file>image/Library (1).jpg</file>
+        <file>image/OIP.jpg</file>
+        <file>image/sd.jpg</file>
+        <file>image/SX.png</file>
+        <file>image/SY.jpg</file>
+        <file>image/xuehuo.jpg</file>
+        <file>image/YF.jpg</file>
+        <file>image/ZHIXING.jpg</file>
+    </qresource>
+</RCC>

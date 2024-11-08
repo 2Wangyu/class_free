@@ -1,0 +1,3 @@
+hhq ALL
+hhq all
+test all

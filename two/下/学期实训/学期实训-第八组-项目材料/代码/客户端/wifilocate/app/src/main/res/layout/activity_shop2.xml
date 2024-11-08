@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- FloatingActionsMenu 设置在顶部居中 -->
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:translationZ="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintVertical_bias="0.05"
+        app:fab_expandDirection="down" >
+        <!-- fabaction2 设置在 fabaction1 的下方 -->
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabaction2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FFF"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/baseline_rate_review_24"
+            app:fab_title="Action 2"
+            app:layout_constraintTop_toBottomOf="@id/floating_menu"
+            android:layout_marginTop="8dp" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FFF"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/baseline_add_ic_call_24"
+            app:fab_title="Action 2"
+            app:layout_constraintTop_toBottomOf="@id/fabaction2"
+            android:layout_marginTop="8dp" />
+<!--        <com.getbase.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fabaction3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:fab_colorNormal="#FFF"-->
+<!--            app:fab_size="mini"-->
+<!--            app:fab_icon="@drawable/baseline_add_ic_call_24"-->
+<!--            app:fab_title="Action 2"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/fabaction"-->
+<!--            android:layout_marginTop="8dp" />-->
+
+
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+<!--几个主的组件-->
+    <!-- Toolbar with custom layout to control navigation icon position -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/red_bg1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.05"
+        app:titleTextColor="#333333"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!-- Background Image for TextView area -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bgshop"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/recyclerview1forth" />
+
+<!--提示字-->
+    <LinearLayout
+        android:id="@+id/recyclerview1forth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/red_bg"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.07"
+
+        >
+        <TextView
+            android:id="@+id/textview_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="商店"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:paddingStart="0dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textViewuse"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@id/recyclerview1forth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textViewShop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="8dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="商品"
+            android:textColor="#000"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textViewReview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="8dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="评论"
+            android:textColor="#000"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+
+    <!-- RecyclerView1 with height 25% -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewuse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.125" />
+
+
+    <!-- RecyclerView2 with height % -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/recyclerview1"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.555"
+        />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/recyclerview2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:itemIconTint="#ff5a86"
+        app:itemTextColor="#ff5a86"
+        app:menu="@menu/navigation"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.11"
+
+
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
